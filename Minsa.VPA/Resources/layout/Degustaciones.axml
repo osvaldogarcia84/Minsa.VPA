@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+        <TextView
+                android:text="Cuestionario de degustación"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+            android:layout_margin="@dimen/abc_text_size_title_material"
+                android:gravity="center_horizontal"
+                android:id="@+id/ctionarioDegustacion"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        <TextView
+            android:text="OV o Factura:"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion0"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="OV/Factura"            
+            android:id="@+id/DegustacionOVFactura" />
+        <TextView
+            android:text="Teléfono (10 dígitos):"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:id="@+id/DegustacionTelefono" />
+        <TextView
+            android:text="Potencial harina (TM x mes):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion2"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionPtencialHarina" />
+        <TextView
+            android:text="Potencial maíz (TM x mes):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion3"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionPotencialMaiz" />
+        <TextView
+            android:text="Potencial masa (TM x mes):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion4"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionPotencialMasa" />
+        <TextView
+            android:text="Harina de la competencia utilizada actualmente:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion5"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionHarinaCompetencia" />
+        <TextView
+            android:text="Sacos de harina MINSA con que se realizó la degustación o prueba:"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion6"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionSacosMinsa" />
+        <TextView
+            android:text="Kg de harina utilizados en la degustación:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion7"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionHarinaKg"
+            android:editable="false"
+            android:clickable="false"
+            android:enabled="false" />
+        <TextView
+            android:text="Harina minsa para degustación o prueba:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion8"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionHarinaMinsa" />
+        <TextView
+            android:text="Rendimiento harina - masa (2.25 - 2.52):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion9"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionRendimientoHarinaMasa" />
+        <TextView
+            android:text="Rendimiento harina - tortilla (1.5 - 2.13):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion10"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionRendimientoHarinaTortilla" />
+        <TextView
+            android:text="Porcentaje de deshidratación del testal:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion11"
+            android:textStyle="bold" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DegustacionDeshidratacionTestal"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:editable="false"
+            android:clickable="false"
+            android:enabled="false" />
+        <TextView
+            android:text="Rendimiento harina - tortilla reportado por la competencia (1.5 - 2.13):"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/Degustacion12"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/DegustacionRendimientoHarinaTortillaCompetencia" />
+        <TextView
+            android:text="Compara rendimiento a tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion13"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionComparacionRendimientoTortilla"
+            android:clickable="false" />
+        <TextView
+            android:text="Comentarios en referencia al producto que utiliza de la competencia:"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion14"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:text="Textura de tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion15"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionTortillaTextura" />
+        <TextView
+            android:text="Color de tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion16"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionTortillaColor" />
+        <TextView
+            android:text="Aroma de tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion17"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionTortillaAroma" />
+        <TextView
+            android:text="Duración de tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion18"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionTortillaDuracion" />
+        <TextView
+            android:text="Correa de tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion19"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionTortillaCorrea" />
+        <TextView
+            android:text="Sabor de tortilla:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/Degustacion20"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionTortillaSabor" />
+        <TextView
+            android:text="¿Se convenció el cliente o prospecto de consumir harina MINSA?:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/Degustacion21"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/DegustacionConvencido" />
+         <TextView
+            android:text="Causas de SI/NO compra:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:id="@+id/Degustacion22"
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/PreguntaSINO" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/CausasDeVenta" />
+        <Button
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/Buttoncomprar"
+            android:textColor="#ffffff"
+            android:id="@+id/EnviarDegustaciones" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:id="@+id/clientes"
+    android:gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <RelativeLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_card_ClienteId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ClienteId"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="Socio :" />
+                <ImageView
+                    android:id="@+id/ClienteSeleccionado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/bookmark" />
+            </LinearLayout>
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Line"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_ClienteId"
+                android:background="@color/main_background" />
+            <LinearLayout
+                android:id="@+id/ll_card_about_Cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_card_about_Line"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ClienteNombre"
+                    android:text="Nombre del cliente"
+                    android:maxLines="1"
+                    android:layout_below="@id/view_card_about_Line"
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_card_ClienteSecuencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_about_Cliente"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="ClienteSecuencia"
+                    android:id="@+id/ClienteSecuencia" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_card_ClienteVisitado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_ClienteSecuencia"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="ClienteVisitado"
+                    android:id="@+id/ClienteVisitado" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_card_Telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_ClienteVisitado"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="Telefono: "
+                    android:id="@+id/ClienteTelefono" />
+            </LinearLayout>
+
+              <LinearLayout
+                android:id="@+id/ll_card_TipoDeVisita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_Telefono"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="Tipo de visita: "
+                    android:id="@+id/TipoDeVisita" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card_MicroCredito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_TipoDeVisita"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="MicroCredito: "
+                    android:id="@+id/MicroCredito" />
+            </LinearLayout>
+        <!--<View
+                android:layout_height="0.3dp"
+                android:id="@+id/View_direccion"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_ClienteVisitado"
+                android:background="@color/main_background" />-->
+            <LinearLayout
+                android:id="@+id/ll_card_Direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_MicroCredito"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <me.grantland.widget.AutofitTextView
+                    android:text="Direccion:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/DireccionCliente"
+                    android:layout_weight="1"
+                    android:maxLines="8" />
+                <ImageView
+                    android:id="@+id/locationGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/google_maps" />
+            <!--<ImageView
+                    android:id="@+id/locationGoogle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/google_maps" />-->
+            </LinearLayout>
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/View_Acessos"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_Direccion"
+                android:background="@color/main_background" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View_Acessos"
+                android:padding="@dimen/card_button_margin">
+                 <ImageView
+                    android:id="@+id/AccesoCarrito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                 
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/carrito_menu" />
+                <ImageView
+                    android:id="@+id/AccesoDegustacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AccesoCarrito"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/degustacion" />
+                <ImageView
+                    android:id="@+id/CXC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AccesoDegustacion"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/CXC" />
+            <!--    <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AccesoDegustacion"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_location_on_black_24dp" />-->
+             <!--   <ImageView
+                    android:id="@+id/AccesoSeguimientoVenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/location"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/seguimiento" />-->
+               
+            <!--    <ImageView
+                    android:id="@+id/AccesoSeguimientoVisita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AccesoCarrito"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/seguimiento_visita" />
+				 <ImageView
+                    android:id="@+id/AccesoCierreVentas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AccesoSeguimientoVisita"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/CierreVentas" />-->
+                  <ImageView
+                    android:id="@+id/BajaCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/CXC"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/eliminarUsuario" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

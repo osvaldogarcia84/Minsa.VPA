@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/CheckInVta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"                
+				android:gravity="center"              
+				
+                android:text="Se genero correctamente el recibo de valores" />
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_VendedorVta"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="@color/main_background" />
+  
+                <Button
+                    android:text="Regresar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/Buttoncomprar"
+                    android:textColor="#ffffff"
+                    android:id="@+id/RegresarRegistroVenta" />
+                <TextView
+                    android:text="* Nota: Presiona el boton de regresar para volver a generarlo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+        
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:id="@+id/pronostico"
+    android:gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <RelativeLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_card_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/ClienteIdPronostico"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="Socio :" />
+                <ImageView
+                    android:id="@+id/ClienteSeleccionadoPronostico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/bookmark" />
+            </LinearLayout>
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_info_line"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_info"
+                android:background="@color/main_background" />
+            <LinearLayout
+                android:id="@+id/ll_card_about_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_card_info_line"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/NombreCtePronostico"
+                    android:text="Nombre del cliente"
+                    android:maxLines="1"
+                    android:layout_below="@id/ll_card_about_info"
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_card_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_about_info"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="Fecha"
+                    android:id="@+id/Fecha" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_card_IdRecurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_fecha"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="IdRecurso"
+                    android:id="@+id/IdRecurso" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_card_Recurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_IdRecurso"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:text="Telefono: "
+                    android:id="@+id/Recurso" />
+            </LinearLayout>      
+            <LinearLayout
+                android:id="@+id/ll_card_Volumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_Recurso"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <me.grantland.widget.AutofitTextView
+                    android:text="Volumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/Volumen"
+                    android:layout_weight="1"
+                    android:maxLines="8" />                      
+            </LinearLayout>
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/View_AcessosPronostico"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_Volumen"
+                android:background="@color/main_background" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View_AcessosPronostico"
+                android:padding="@dimen/card_button_margin">
+                 <ImageView
+                    android:id="@+id/AcessoEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                 
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/editar" />
+                <ImageView
+                    android:id="@+id/AccesoEliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AcessoEditar"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/eliminar" />
+
+                <!--  <ImageView
+                    android:id="@+id/BajaCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/AccesoDegustacion"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/eliminarUsuario" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

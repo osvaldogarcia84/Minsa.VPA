@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+        <TextView
+            android:text="Nombre *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"            
+            android:maxLength="100"
+            android:id="@+id/Nombre" />
+         <TextView
+            android:text="Apellido paterno *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt2"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"            
+            android:maxLength="100"
+            android:id="@+id/Paterno" />
+          <TextView
+            android:text="Apellido materno *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt3"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"            
+            android:maxLength="100"
+            android:id="@+id/Materno" />
+        <TextView
+            android:text="Calle *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt4"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"            
+            android:maxLength="100"
+            android:id="@+id/Calle" />
+         <TextView
+            android:text="No ext *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt5"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"       
+            android:inputType="number"
+            android:maxLength="10"            
+            android:id="@+id/NoExt" />
+          <TextView
+            android:text="No int *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt6"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"       
+            android:inputType="number"
+            android:maxLength="10"            
+            android:id="@+id/NoInt" />
+         <TextView
+            android:text="Colonia *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt7"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"                       
+            android:id="@+id/Colonia" />
+         <TextView
+            android:text="Codigo postal *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt8"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"       
+            android:inputType="number"
+            android:maxLength="10"            
+            android:id="@+id/CP" />
+         <TextView
+            android:text="Estado *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt9"
+            android:textStyle="bold" />
+        <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Estado"
+            android:spinnerMode="dropdown"
+            android:textSize="5sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Municipio *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt10"
+            android:textStyle="bold" />
+         <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Municpio"
+            android:spinnerMode="dropdown"
+            android:textSize="5sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Telefono *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt11"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"       
+            android:inputType="number"
+            android:maxLength="10"            
+            android:id="@+id/Telefono" />
+        <TextView
+            android:text="Celular *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt12"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"  
+            android:inputType="number"
+            android:maxLength="10"   
+            android:id="@+id/Celular" />
+        <TextView
+            android:text="Correo *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt13"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"                   
+            android:id="@+id/Correo" />
+        <TextView
+            android:text="RFC *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt14"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"                     
+            android:id="@+id/RFC" />
+        <!-- <TextView
+                    android:text="Si no tienes RFC activa la casilla para generar uno generico"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/AltaClientetxt20"
+                    android:gravity="center_horizontal" />
+        <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CheckRFCGenerico"
+                    android:layout_marginLeft="120dp" />-->
+  <!--      <TextView
+            android:text="Tipo de socio *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt15"
+            android:textStyle="bold" />
+       <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SPTSocio"
+            android:spinnerMode="dropdown"
+            android:textSize="5sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Responsabilidad fiscal *"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/AltaClientetxt17"
+            android:textStyle="bold" />
+       <Spinner
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpFiscal"
+            android:spinnerMode="dropdown"
+            android:textSize="5sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />-->
+         <Button
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/Buttoncomprar"
+            android:textColor="#ffffff"
+            android:id="@+id/EnviarAltaCliente" />
+    </LinearLayout>
+</ScrollView>

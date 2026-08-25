@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/NombreVendedorVisita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+                android:layout_marginBottom="@dimen/card_subtitle_margin"
+                android:layout_marginStart="@dimen/card_subtitle_margin"
+                android:layout_marginEnd="@dimen/card_subtitle_margin"
+                android:layout_marginTop="@dimen/card_button_margin"
+                android:text="Nombre del vendedor" />
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Vendedor"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ClienteId"
+                android:background="@color/main_background" />
+            <LinearLayout
+                android:id="@+id/ll_card_about_Vendedor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_card_about_Vendedor"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:text="Entrega de factura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SeguimientoVisitaFactura" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/card_SeguimientoVisitaVenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_about_Vendedor"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:text="Venta de producto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SeguimientoVisitaVenta" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/card_reclamacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_SeguimientoVisitaVenta"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:text="Reclamación"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SeguimientoVisitaReclamacion" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/VisitaServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_reclamacion"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:text="Servicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SeguimientoVisitaServicio" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:text="Enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/Buttoncomprar"
+        android:textColor="#ffffff"
+        android:id="@+id/EnviarSeguimientoVisita" />
+</LinearLayout>

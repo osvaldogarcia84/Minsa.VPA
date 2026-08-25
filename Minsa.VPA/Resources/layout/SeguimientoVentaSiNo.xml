@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/NombreVendedorVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+                android:layout_marginBottom="@dimen/card_subtitle_margin"
+                android:layout_marginStart="@dimen/card_subtitle_margin"
+                android:layout_marginEnd="@dimen/card_subtitle_margin"
+                android:layout_marginTop="@dimen/card_button_margin"
+                android:text="Nombre del vendedor" />
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Vendedor"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ClienteId"
+                android:background="@color/main_background" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SeguimientoDeVenta">
+        <TextView
+            android:text="¿La venta fue mayor o menor?:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/SeguimientoDeVentaComparacionTexto"
+            android:gravity="center_horizontal" />
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SeguimientoDeVentaComparacionGrupo"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Igual/Mayor"
+                android:id="@+id/SeguimientoDeVentaComparacionMayor" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menor"
+                android:id="@+id/SeguimientoDeVentaComparacionMenor" />
+        </RadioGroup>
+        <!--<TextView
+            android:text="¿El cliente compra/compraba a la competencia?:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/SeguimientoDeVentaCompetenciaTexto"
+            android:gravity="center_horizontal" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SeguimientoDeVentaCompetenciaRespuesta"
+            android:layout_marginLeft="170dp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SeguimientoDeVentaCompetencia" />-->
+
+         <TextView
+            android:text="Respuesta de cliente:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ResultadoDeVentaRespuestaTexto"
+            android:gravity="center"
+            android:textStyle="bold" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ResultadoDeVentaRespuesta" />
+        <TextView
+            android:text="Número de orden:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ResultadoDeVentaOrdenText"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ResultadoDeVentaOrden" />
+        <FrameLayout
+            android:id="@+id/SeguimientoDeVentaRazon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+                 <Button
+                    android:text="Enviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/Buttoncomprar"
+                    android:textColor="#ffffff"
+                    android:id="@+id/EnviarSeguimientoVentaSiNo" />
+        </LinearLayout>
+     </LinearLayout>
+   </android.support.v7.widget.CardView>
+</RelativeLayout>

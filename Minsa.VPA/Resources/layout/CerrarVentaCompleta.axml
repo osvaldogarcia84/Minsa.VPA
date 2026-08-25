@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <LinearLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/NombreProspecto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+				
+                android:layout_marginBottom="@dimen/card_subtitle_margin"
+                android:layout_marginStart="@dimen/card_subtitle_margin"
+                android:layout_marginEnd="@dimen/card_subtitle_margin"
+                android:layout_marginTop="@dimen/card_button_margin"
+                android:text="Nombre del vendedor" />
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Vendedor"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ClienteId"
+                android:background="@color/main_background" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/CierreVenta">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/CodigoProspecto"
+                    android:text="Codigo: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+               <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoVolumen"
+                    android:text="Volumen: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+               <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoEstrategia"
+                    android:text="EstrategiaCerrarVenta: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoPlazo"
+                    android:text="Plazo: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+			   <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoCantidad"
+                    android:text="Cantidad: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoMarca"
+                    android:text="Marca: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoRecurso"
+                    android:text="Recurso: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoPrecio"
+                    android:text="Precio: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoTelefono"
+                    android:text="Telefono: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoCorreo"
+                    android:text="Correo: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoVenta"
+                    android:text="Estatus de la venta: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+				   <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/ProspectoFecha"
+                    android:text="Fecha de creacion: "
+                    android:maxLines="1"                    
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+                <Button
+                    android:text="Cerrar venta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/Buttoncomprar"
+                    android:textColor="#ffffff"
+                    android:id="@+id/BtnCerraVenta" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

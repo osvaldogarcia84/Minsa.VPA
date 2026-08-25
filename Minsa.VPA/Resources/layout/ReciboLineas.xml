@@ -1,0 +1,281 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/TransaccionesLineas">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/lineasTra">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:id="@+id/textView1" />
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <RelativeLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/CteRecibo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true">
+                <TextView
+                    android:text="Cliente: "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/ClienteTextoR"
+                    android:layout_below="@id/CteRecibo"
+                    android:layout_weight="1" />
+                <me.grantland.widget.AutofitTextView
+                    android:text="Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/ClienteTransacciones"
+                    android:layout_weight="1"
+                    android:layout_below="@id/ClienteTextoR"
+                    android:maxLines="4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/CtaDto"
+                android:layout_below="@id/CteRecibo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true">
+                <TextView
+                    android:text="Factura: "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/ClienteTextoCR"
+                    android:layout_below="@id/CteRecibo"
+                    android:layout_weight="1" />
+                <me.grantland.widget.AutofitTextView
+                    android:text="Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/FacturaTransacciones"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/CtaDg"
+                android:layout_below="@id/CtaDto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true">
+                <TextView
+                    android:text="Dig. verificador: "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/ClienteCg"
+                    android:layout_below="@id/CtaDg"
+                    android:layout_weight="1" />
+                <me.grantland.widget.AutofitTextView
+                    android:text="Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/DgVerificador"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/CtaFA"
+                android:layout_below="@id/CtaDg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true">
+                <TextView
+                    android:text="Referencia 1: "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/Ctefact"
+                    android:layout_below="@id/CtaFA"
+                    android:layout_weight="1" />
+                <me.grantland.widget.AutofitTextView
+                    android:text="Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/CtaDep"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/CtaCant"
+                android:layout_below="@id/CtaFA"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true">
+                <TextView
+                    android:text="Cantidad: "
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/ClienteTexto12"
+                    android:layout_below="@id/CtaFA"
+                    android:layout_weight="1" />
+                <me.grantland.widget.AutofitTextView
+                    android:text="Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/Bultos"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/CtaPrecio"
+                android:layout_below="@id/CtaCant"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true">
+                <TextView
+                    android:text="Precio:"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:id="@+id/ClienteTexto13"
+                    android:layout_below="@id/CtaPrecio"
+                    android:layout_weight="1" />
+                <me.grantland.widget.AutofitTextView
+                    android:text="Small"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/Precio"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CtaImport"
+                android:layout_below="@id/CtaPrecio">
+                <TextView
+                    android:text="Importe: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.5dp"
+                    android:id="@+id/txt15"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="84.0dp"
+                    android:drawableLeft="@drawable/ventas"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:text="Small"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="105.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.5dp"
+                    android:gravity="center"
+                    android:id="@+id/ImporteT"
+                    android:layout_marginBottom="1.0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginBottom="3dp"
+                android:id="@+id/CtaHora"
+                android:layout_below="@id/CtaImport">
+                <TextView
+                    android:text="Hora de creación: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.5dp"                   
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="84.0dp"                
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:text="Small"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="105.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.5dp"
+                    android:gravity="center"
+                    android:id="@+id/HoraCreacion"
+                    android:layout_marginBottom="1.0dp" />
+            </LinearLayout>
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_marginBottom="3dp"
+                android:id="@+id/CtaFormaPago"
+                android:layout_below="@id/CtaHora">
+                <TextView
+                    android:text="Forma de pago: "
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.5dp"                   
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="84.0dp"                
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:text="Small"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="105.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1.5dp"
+                    android:gravity="center"
+                    android:id="@+id/PagoT"
+                    android:layout_marginBottom="1.0dp" />
+            </LinearLayout>
+
+          
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom" />
+    </LinearLayout>
+</LinearLayout>

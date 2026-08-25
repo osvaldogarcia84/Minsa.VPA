@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home_1"
+        android:icon="@mipmap/ic_home_1"
+        android:title="Inicio" />   
+  </group>
+
+  <item android:title="Clientes">
+    <menu>
+      <item
+       android:id="@+id/nav_Rutas"
+       android:icon="@mipmap/rutas"
+       android:title="Ruta" />
+      <item
+      android:id="@+id/nav_Descargar_Rutas"
+      android:icon="@mipmap/registro_offline"
+      android:title="Descargar ruta" />
+      <item
+     android:id="@+id/nav_Busqueda_Clientes"
+     android:icon="@mipmap/busqueda"
+     android:title="Buscar cliente" />
+    </menu>
+  </item>
+  <item android:title="Venta">
+    <menu>
+      <!--<item
+       android:id="@+id/nav_Carrito"
+       android:icon="@mipmap/carrito_menu"
+       android:title="Carrito" />-->
+      <item
+      android:id="@+id/nav_YALO"
+      android:icon="@mipmap/yalo"
+      android:title="YALO" />
+      <item
+      android:id="@+id/nav_Inventario"
+      android:icon="@mipmap/inventario"
+      android:title="Inventario" />
+     <item
+	   android:id="@+id/nav_Pronostico"
+	   android:icon="@mipmap/pronostico"
+	   android:title="Pronostico" />
+	 <item
+      android:id="@+id/nav_Recibo"
+      android:icon="@mipmap/ordenes_menu"
+      android:title="Recibo" />
+	  <item
+		android:id="@+id/nav_HistoricoVenta"
+		android:icon="@mipmap/infoventa"
+		android:title="Historico de venta" />
+	</menu>
+  </item>
+
+  <!--<item android:title="Seguimiento de Venta">
+    <menu>
+      <item
+      android:id="@+id/nav_CierreVenta"
+      android:icon="@mipmap/cierre_ventas"
+      android:title="Cierre de venta" />
+    </menu>
+  </item>-->
+
+  <item android:title="Alta de clientes">
+    <menu>
+      <item
+      android:id="@+id/nav_AltasClientes"
+      android:icon="@mipmap/altacliente"
+      android:title="Alta de clientes" />
+    </menu>
+  </item>
+  <!--<item android:title="Perfil">
+    <menu>
+      <item
+      android:id="@+id/nav_Check"
+      android:icon="@mipmap/check"
+      android:title="Check In/Out" />
+    </menu>
+  </item>-->
+  
+  <!--<item android:title="Geolocalización">
+    <menu>
+      --><!--item
+           android:id="@+id/nav_geolocalizacion"
+           android:icon="@mipmap/gelocalizacion"
+           android:showAsAction="always"
+           android:title="Geolocalización"/>
+      <item
+           android:id="@+id/nav_SeguimientoVisita"
+           android:icon="@mipmap/seguimiento_visita"
+           android:showAsAction="always"
+           android:title="Seguimiento Visita"/>--><!--
+      <item
+            android:id="@+id/nav_Geocerca"
+            android:icon="@mipmap/geocerca"
+            android:showAsAction="always"
+            android:title="Geocerca"/>
+    </menu>
+  </item>-->
+  
+  <!--<item android:title="Estrategias">
+    <menu>
+      <item
+          android:id="@+id/nav_Degustación"
+          android:icon="@mipmap/degustacion"
+          android:title="Degustación" />    
+    </menu>
+  </item>-->
+
+  <item android:title="Sistema">
+    <menu>
+      <item
+          android:id="@+id/nav_Ajustes"
+          android:icon="@mipmap/ajustes"
+          android:showAsAction="always"
+          android:title="Ajustes"/>
+      <item
+          android:id="@+id/nav_salir"
+          android:icon="@drawable/salir"
+          android:showAsAction="always"
+          android:title="Salir"/>
+    </menu>
+  </item>
+
+</menu>

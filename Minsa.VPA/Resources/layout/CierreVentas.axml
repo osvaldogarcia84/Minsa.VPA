@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_card_about_source_licenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.CardContent"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/BusquedaProspectos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Busqueda"
+                android:maxLength="20"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View
+        android:layout_height="0.3dp"
+        android:id="@+id/view_card_about_Vendedor"
+        android:layout_width="match_parent"
+    
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/main_background" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="64px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@android:id/list" />
+</RelativeLayout>

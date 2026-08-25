@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_layout_recycler_view2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+<!--      <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp">
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tituloSup"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/card_title_margin"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="Bienvenido a Minsa" />
+                <View
+                    android:layout_height="0.3dp"
+                    android:id="@+id/view_card_about_Sup"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/tituloSup"
+                    android:background="@color/main_background" />
+
+                <LinearLayout
+                    android:id="@+id/ll_card_about_Supervisor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view_card_about_Sup"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="horizontal">
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/NombreSupervisor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tituloSup"
+                        android:layout_marginBottom="@dimen/card_subtitle_margin"
+                        android:layout_marginStart="@dimen/card_subtitle_margin"
+                        android:layout_marginEnd="@dimen/card_subtitle_margin"
+                        android:layout_marginTop="@dimen/card_button_margin"
+                        android:text="Nombre del vendedor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_card_Usuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_card_Usuario"
+                    android:background="?android:selectableItemBackground"
+                    android:orientation="horizontal">
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/IniUsuario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_card_Usuario"
+                        android:layout_marginBottom="@dimen/card_subtitle_margin"
+                        android:layout_marginStart="@dimen/card_subtitle_margin"
+                        android:layout_marginEnd="@dimen/card_subtitle_margin"
+                        android:layout_marginTop="@dimen/card_button_margin"
+                        android:text="Codigo" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    -->
+         
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RecycledInicioSupervisor"          
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    
+</android.support.v4.widget.SwipeRefreshLayout>

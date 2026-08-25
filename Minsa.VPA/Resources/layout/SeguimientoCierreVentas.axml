@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	 <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
+		 <me.grantland.widget.AutofitTextView
+                android:id="@+id/NombreVendedorCierreVenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+                android:layout_marginBottom="@dimen/card_subtitle_margin"
+                android:layout_marginStart="@dimen/card_subtitle_margin"
+                android:layout_marginEnd="@dimen/card_subtitle_margin"
+                android:layout_marginTop="@dimen/card_button_margin"
+                android:text="Nombre del vendedor" />
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Vendedor"
+                android:layout_width="match_parent"
+                android:layout_below="@id/NombreVendedorCierreVenta"
+                android:background="@color/main_background" />
+		<TextView
+            android:text="Volumen a capturar"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre1"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="Volumen"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:id="@+id/VolumenACapturar" />
+		<TextView
+            android:text="Estrategia para cerrar venta"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre2"
+            android:textStyle="bold" />
+   	    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/EstrategiaCerrarVenta" />
+		<TextView
+            android:text="Cantidad"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre3"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="Cantidad"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:id="@+id/CantidadCierre" />
+		<TextView
+            android:text="Plazo de la estrategia(mes)"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre4"
+            android:textStyle="bold" />
+		 <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/PlazoEstrategia" />
+		<TextView
+            android:text="Precio"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre4"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:id="@+id/PrecioCierre" />
+		<TextView
+            android:text="Telefono"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre5"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="Telefono"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:id="@+id/TelefonoCierre" />
+		<TextView
+            android:text="Correo electronico"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre15"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin"
+            android:hint="Correo electronico"            
+            android:maxLength="100"
+            android:id="@+id/CorreoCierre" />
+		<TextView
+            android:text="Marca"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre6"
+            android:textStyle="bold" />
+		 <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/CompaniaEstrategia" />
+	     <TextView
+            android:text="Recurso"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/text_margin_very_small"
+            android:layout_height="match_parent"
+            android:id="@+id/Cierre7"
+            android:textStyle="bold" />
+		 <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:id="@+id/RecursoEstrategia" />
+		 <Button
+            android:text="Enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/Buttoncomprar"
+            android:textColor="#ffffff"
+            android:id="@+id/EnviarSeguimientoCerrarVenta" />
+		</LinearLayout>
+</ScrollView>

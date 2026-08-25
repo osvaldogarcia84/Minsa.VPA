@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+     <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+         <RelativeLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <me.grantland.widget.AutofitTextView            
+            android:text="Almacen :"
+            android:id="@+id/AlmacenSup"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/card_title_margin"
+            android:layout_marginTop="@dimen/card_title_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+         <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Almacen"
+                android:layout_width="match_parent"
+                android:layout_below="@id/AlmacenSup"
+                android:background="@color/main_background" />
+         
+        <me.grantland.widget.AutofitTextView            
+            android:id="@+id/CtesRutaSup"
+            android:layout_below="@+id/view_card_about_Almacen"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <me.grantland.widget.AutofitTextView          
+            android:id="@+id/IniCteVisitas"
+            android:layout_below="@+id/CtesRutaSup"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <me.grantland.widget.AutofitTextView          
+            android:id="@+id/IniCteInventario"
+            android:layout_below="@+id/IniCteVisitas"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+         <me.grantland.widget.AutofitTextView          
+            android:id="@+id/CteImportDepositarSup"
+            android:layout_below="@+id/IniCteInventario"
+            android:layout_marginBottom="@dimen/card_subtitle_margin"
+            android:layout_marginStart="@dimen/card_subtitle_margin"
+            android:layout_marginEnd="@dimen/card_subtitle_margin"
+            android:layout_marginTop="@dimen/card_button_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+         </RelativeLayout>
+       </android.support.v7.widget.CardView>
+   
+</LinearLayout>

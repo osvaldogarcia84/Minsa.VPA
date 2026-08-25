@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="12dp"
+    android:id="@+id/Prospectos"
+    android:gravity="center_horizontal">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+        <RelativeLayout
+            style="@style/Widget.CardContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_card_ProspectoId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/IdSocioProspecto"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/card_title_margin"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:text="Socio :" />
+                <ImageView
+                    android:id="@+id/ClienteSeleccionado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/card_title_margin_top"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/bookmark" />
+            </LinearLayout>
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/view_card_about_Line"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_ProspectoId"
+                android:background="@color/main_background" />
+            <LinearLayout
+                android:id="@+id/ll_card_about_Cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_card_about_Line"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/NombreProspectoCV"
+                    android:text="Nombre del prospecto"
+                    android:maxLines="1"
+                    android:layout_below="@id/view_card_about_Line"
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />
+            </LinearLayout>
+   
+            <LinearLayout
+                android:id="@+id/ll_card_Direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_card_about_Cliente"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+				 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/text_margin_very_small"
+                    android:id="@+id/EstatusVenta"
+                    android:text="Cerrar venta:"
+                    android:maxLines="1"
+                    android:layout_below="@id/view_card_about_Line"
+                    android:layout_marginBottom="@dimen/card_subtitle_margin"
+                    android:layout_marginStart="@dimen/card_subtitle_margin"
+                    android:layout_marginEnd="@dimen/card_subtitle_margin"
+                    android:layout_marginTop="@dimen/card_button_margin" />               
+             <!--   <ImageView
+                    android:id="@+id/locationGoogle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/google_maps" />
+            -->
+            </LinearLayout>
+            <View
+                android:layout_height="0.3dp"
+                android:id="@+id/View_Acessos"
+                android:layout_width="match_parent"
+                android:layout_below="@id/ll_card_Direccion"
+                android:background="@color/main_background" />
+           
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

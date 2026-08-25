@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:src="@mipmap/ordenes_menu" />
+            <TextView
+                android:text="Importe a depositar:"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/LineaNueva2"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+            <me.grantland.widget.AutofitTextView
+                android:text="Small"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/ImporteDepto"
+                android:maxLines="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+<!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/LineaImporte"
+        android:layout_marginLeft="0.0dp"
+        android:layout_marginBottom="4.5dp">
+        <TextView
+            android:text="Importe a depositar"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtImporteTotal"
+            android:gravity="center"
+            android:layout_gravity="center"            
+            android:drawableLeft="@mipmap/ordenes_menu"
+            android:layout_marginLeft="@dimen/style_margin"
+            android:layout_marginRight="@dimen/style_margin" />
+        <TextView
+            android:text="Small"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1.5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/ImporteDepto"
+            android:layout_marginTop="1.5dp" />
+    </LinearLayout>-->
+
+	
+   <Button
+             android:text="Corte de caja"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="20dp"
+             android:layout_marginLeft="20dp"
+             android:layout_marginTop="5dp"
+	  		 android:layout_marginBottom="5dp"
+             android:background="@drawable/Buttoncomprar"
+             android:textColor="#ffffff"
+             android:id="@+id/CorteCaja" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list" />
+</LinearLayout>

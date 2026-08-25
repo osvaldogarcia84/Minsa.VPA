@@ -67,7 +67,7 @@ namespace Minsa.VPA.Fragments
             _progress.SetMessage("Cargando histórico de ventas...");
             _progress.SetCancelable(false);
             _progress.Show();
-
+            /// Estimado companiero Coria, no mueva este bloque de código, ya que es el que permite que la consulta se ejecute en segundo plano y no bloquee la UI.
             try
             {
                 // Ejecuta la consulta en segundo plano SIN bloquear la UI
